@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+h1{
+  color: green;
+  margin: 15px;
+}
+
+h2{
+  font-size: 30px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.center{
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button{
+  width: 100px;
+  height: 40px;
+  margin: 5px;
+  color: white;
+  background-color: rgb(42, 223, 42);
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.end{
+  visibility: hidden;
+}
+
+canvas{
+  box-shadow: #000 0px 10px 20px;
+}
+
+.arrow{
+  width: 100%;
+  display: none;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 5vh;
+}
+
+.arrow-up{
+  grid-column: 1/-1;
+  justify-self: center;
+}
+
+.arrow-left{
+  justify-self: center;
+}
+
+.arrow-right{
+  justify-self: center;
+}
+
+.arrow-down{
+  grid-column: 1/-1;
+  justify-self: center;
+}
+
+.material-icons{
+  border: 5px solid black;
+  border-radius: 50%;
+}
+
+.material-icons.md-48{ font-size: 48px; cursor: pointer;}
+
+@media (max-width : 500px){
+  .arrow{ display: grid;}
+  .center{ top: 35%;}
+  h2{ font-size: 22px;}
+}

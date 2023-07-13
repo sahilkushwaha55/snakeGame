@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="#" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake Game</title>
+</head>
+
+<body>
+  <h1>Snake Game</h1>
+  <div class="center start">
+    <h2>Use arrow keys to play game</h2>
+  </div>
+  <div class="center end">
+    <h2>Press to restart game</h2>
+    <button onclick="window.location.reload()">Restart</button>
+  </div>
+  <canvas class="webgl"></canvas>
+  <div class="arrow">
+    <div class="arrow-up"><span class="material-icons md-48">expand_less</span></div>
+    <div class="arrow-left"><span class="material-icons md-48">chevron_left</span></div>
+    <div class="arrow-right"><span class="material-icons md-48">chevron_right</span></div>
+    <div class="arrow-down"><span class="material-icons md-48">expand_more</span></div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
